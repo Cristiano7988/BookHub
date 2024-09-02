@@ -2,7 +2,7 @@ import Carrossel from '@/Components/Carrossel';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
 
-export default function Edit({ auth }) {
+export default function Index({ auth }) {
     return (
         <AuthenticatedLayout
             user={auth.user}

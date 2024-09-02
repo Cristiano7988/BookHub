@@ -41,10 +41,10 @@ export default function Carrossel() {
         {carregando
             ? "Carregando..."
             : livros.length
-                ? livros.map(livro => <div className='livro' key={livro.index}>
+                ? livros.map(livro => <a href={`/livros/${livro.index}`} className='livro' key={livro.index}>
                     <img src={livro.cover} />
                     {livro.title}
-                </div>)
+                </a>)
                 : "Nenhum livro encontrado"}
     </div>
 }

@@ -21,6 +21,7 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/livros', [LivroController::class, 'index'])->name('livros.index');
+    Route::get('/livros/{id}', [LivroController::class, 'show'])->name('livros.show');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

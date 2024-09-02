@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Index */
 .card {
     display: flex;
     justify-content: center;
@@ -39,4 +39,28 @@
     background-color: lightyellow;
     padding: 5px;
     border-radius: 5px;
+}
+
+/* SHOW */
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: white;
+    max-width: 80rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.info__detalhes {
+    min-width: 200px;
+}
+
+@media only screen and (max-width: 676px) {
+    .info {
+        flex-wrap: wrap;
+    }
 }

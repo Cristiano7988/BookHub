@@ -13,4 +13,15 @@ class LivroController extends Controller
     {
         return Inertia::render('Livros/Index');
     }
+
+    
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        return Inertia::render('Livros/Show', [
+            'id' => $id
+        ]);
+    }
 }
